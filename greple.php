@@ -16,7 +16,6 @@ foreach($outArray as $o) {
     $command .= " | grep -v $o ";
 }
 
-
 echo `$command`;
 echo PHP_EOL . $command;
 echo PHP_EOL . trim(`$command | wc -l`) . ' words' . PHP_EOL;
